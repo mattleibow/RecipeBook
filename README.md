@@ -27,6 +27,11 @@ The site features:
 
 - [2024/01/01 - Ultimate Fudgy Brownies](2024/01/01/fudgy-brownies.md)
 - [2024/01/02 - Heavenly Cinnamon Pancakes with Honey](2024/01/02/cinnamon-pancakes.md)
+- [2024/01/03 - Healing Chicken and Rice Soup](2024/01/03/healing-chicken-rice-soup.md)
+- [2024/01/04 - Rustic Sourdough Bread](2024/01/04/rustic-sourdough-bread.md)
+- [2024/01/05 - Sunshine Lemon Bars](2024/01/05/sunshine-lemon-bars.md)
+- [2024/01/06 - Hearty Winter Beef Stew](2024/01/06/hearty-winter-beef-stew.md)
+- [2024/01/07 - Garden Fresh Herb Pasta](2024/01/07/garden-fresh-herb-pasta.md)
 
 ## Writing Guidelines
 

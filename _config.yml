@@ -9,10 +9,11 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
-# Plugins
+# Plugins (all supported by GitHub Pages)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Collections for recipes
 collections:
@@ -39,6 +40,9 @@ exclude:
   - .github/
   - .git/
   - .gitignore
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
 
 # Include all markdown files in date folders
 include:

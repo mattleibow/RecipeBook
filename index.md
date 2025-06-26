@@ -13,7 +13,7 @@ title: Recipe Journey
     <div class="col-md-8 mx-auto">
         <h2 class="mb-4">Latest Recipe Stories</h2>
         
-        {% assign recipe_files = site.pages | where_exp: "page", "page.path contains '2024/'" | where_exp: "page", "page.path contains 'fudgy-brownies.md' or page.path contains 'cinnamon-pancakes.md'" | sort: "path" | reverse %}
+        {% assign recipe_files = site.pages | where_exp: "page", "page.path contains '2024/'" | where_exp: "page", "page.path contains '.md'" | sort: "path" | reverse %}
         
         {% for recipe in recipe_files limit: 3 %}
         <div class="card mb-4 shadow-sm">

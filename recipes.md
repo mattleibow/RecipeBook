@@ -11,7 +11,7 @@ permalink: /recipes/
 
 <div class="row">
     <div class="col-md-10 mx-auto">
-        {% assign recipe_files = site.pages | where_exp: "page", "page.path contains '2024/'" | where_exp: "page", "page.path contains 'fudgy-brownies.md' or page.path contains 'cinnamon-pancakes.md'" | sort: "path" %}
+        {% assign recipe_files = site.pages | where_exp: "page", "page.path contains '2024/'" | where_exp: "page", "page.path contains '.md'" | sort: "path" %}
         
         {% for recipe in recipe_files %}
         <div class="card mb-4 shadow-sm">

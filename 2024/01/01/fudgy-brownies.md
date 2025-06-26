@@ -40,6 +40,10 @@ Something magical happened as I melted the butter and chocolate together, watchi
 
 2. **Melt Chocolate and Butter**: In a large microwave-safe bowl or double boiler, melt the butter and chopped chocolate together, stirring every 30 seconds until smooth and completely combined. Let cool slightly.
 
+<div class="recipe-step-image">
+<img src="{{ '/images/2024/01/01/fudgy-brownies/step-2.svg' | relative_url }}" alt="Melting chocolate and butter" class="img-fluid">
+</div>
+
 3. **Mix Wet Ingredients**: Whisk the sugar into the chocolate mixture until well combined. Add eggs one at a time, beating well after each addition. Stir in vanilla extract.
 
 4. **Combine Dry Ingredients**: In a separate bowl, whisk together flour, cocoa powder, and salt.

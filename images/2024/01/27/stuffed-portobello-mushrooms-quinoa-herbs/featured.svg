@@ -1,0 +1,47 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f0f8ff"/>
+  
+  <!-- Plate -->
+  <ellipse cx="300" cy="320" rx="250" ry="50" fill="#e6e6fa"/>
+  <ellipse cx="300" cy="315" rx="240" ry="45" fill="#f5f5f5"/>
+  
+  <!-- Mushroom caps -->
+  <ellipse cx="200" cy="280" rx="70" ry="35" fill="#8b4513"/>
+  <ellipse cx="400" cy="280" rx="70" ry="35" fill="#8b4513"/>
+  
+  <!-- Mushroom gills underneath -->
+  <ellipse cx="200" cy="285" rx="65" ry="30" fill="#654321"/>
+  <ellipse cx="400" cy="285" rx="65" ry="30" fill="#654321"/>
+  
+  <!-- Quinoa filling -->
+  <ellipse cx="200" cy="275" rx="50" ry="20" fill="#daa520"/>
+  <ellipse cx="400" cy="275" rx="50" ry="20" fill="#daa520"/>
+  
+  <!-- Herbs scattered on top -->
+  <rect x="185" y="265" width="8" height="2" fill="#228b22" transform="rotate(45 185 265)"/>
+  <rect x="195" y="270" width="6" height="2" fill="#228b22" transform="rotate(-30 195 270)"/>
+  <rect x="210" y="268" width="7" height="2" fill="#228b22" transform="rotate(60 210 268)"/>
+  <rect x="220" y="272" width="5" height="2" fill="#228b22" transform="rotate(-45 220 272)"/>
+  
+  <rect x="385" y="265" width="8" height="2" fill="#228b22" transform="rotate(30 385 265)"/>
+  <rect x="395" y="270" width="6" height="2" fill="#228b22" transform="rotate(-60 395 270)"/>
+  <rect x="410" y="268" width="7" height="2" fill="#228b22" transform="rotate(45 410 268)"/>
+  <rect x="420" y="272" width="5" height="2" fill="#228b22" transform="rotate(-15 420 272)"/>
+  
+  <!-- Pine nuts -->
+  <ellipse cx="190" cy="275" rx="2" ry="1" fill="#f5deb3"/>
+  <ellipse cx="205" cy="278" rx="2" ry="1" fill="#f5deb3"/>
+  <ellipse cx="215" cy="273" rx="2" ry="1" fill="#f5deb3"/>
+  <ellipse cx="390" cy="275" rx="2" ry="1" fill="#f5deb3"/>
+  <ellipse cx="405" cy="278" rx="2" ry="1" fill="#f5deb3"/>
+  <ellipse cx="415" cy="273" rx="2" ry="1" fill="#f5deb3"/>
+  
+  <!-- Sun-dried tomatoes -->
+  <ellipse cx="180" cy="280" rx="3" ry="2" fill="#b22222"/>
+  <ellipse cx="200" cy="285" rx="3" ry="2" fill="#b22222"/>
+  <ellipse cx="380" cy="280" rx="3" ry="2" fill="#b22222"/>
+  <ellipse cx="400" cy="285" rx="3" ry="2" fill="#b22222"/>
+  
+  <text x="300" y="50" text-anchor="middle" fill="#8b4513" font-family="serif" font-size="24" font-weight="bold">Stuffed Portobello Mushrooms</text>
+  <text x="300" y="380" text-anchor="middle" fill="#8b4513" font-family="serif" font-size="16">with Quinoa and Fresh Herbs</text>
+</svg>

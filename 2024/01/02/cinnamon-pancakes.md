@@ -1,3 +1,9 @@
+---
+layout: recipe
+title: "Heavenly Cinnamon Pancakes with Honey"
+date: 2024-01-02
+---
+
 # Heavenly Cinnamon Pancakes with Honey
 
 ## A Story of Healing and New Beginnings

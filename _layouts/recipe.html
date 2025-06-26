@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <article class="recipe-article">
+            <!-- Recipe Title -->
+            <header class="text-center mb-4">
+                <h1 class="display-4 mb-3">{{ page.title | default: "Recipe" }}</h1>
+                {% if page.date %}
+                <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+                {% endif %}
+            </header>
+
+            <!-- Recipe Content -->
+            <div class="recipe-content">
+                {{ content }}
+            </div>
+
+            <!-- Recipe Navigation -->
+            <nav class="recipe-nav mt-5 pt-4 border-top">
+                <div class="row">
+                    <div class="col-6">
+                        {% if page.previous %}
+                        <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-secondary">
+                            &larr; Previous Recipe
+                        </a>
+                        {% endif %}
+                    </div>
+                    <div class="col-6 text-end">
+                        {% if page.next %}
+                        <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-secondary">
+                            Next Recipe &rarr;
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="{{ '/' | relative_url }}" class="btn btn-primary">Back to Recipe Journal</a>
+                </div>
+            </nav>
+        </article>
+    </div>
+</div>
+
+<script>
+// Add styling classes to content sections
+document.addEventListener('DOMContentLoaded', function() {
+    // Style story sections
+    const storyHeadings = document.querySelectorAll('h2');
+    storyHeadings.forEach(heading => {
+        if (heading.textContent.toLowerCase().includes('story') || 
+            heading.textContent.toLowerCase().includes('beginning') ||
+            heading.textContent.toLowerCase().includes('comfort') ||
+            heading.textContent.toLowerCase().includes('connection')) {
+            let content = heading.nextElementSibling;
+            while (content && content.tagName !== 'H2') {
+                if (content.tagName === 'P') {
+                    if (!content.closest('.recipe-story')) {
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'recipe-story';
+                        content.parentNode.insertBefore(wrapper, content);
+                        wrapper.appendChild(heading);
+                        while (wrapper.nextElementSibling && wrapper.nextElementSibling.tagName !== 'H2') {
+                            wrapper.appendChild(wrapper.nextElementSibling);
+                        }
+                        break;
+                    }
+                }
+                content = content.nextElementSibling;
+            }
+        }
+    });
+
+    // Style ingredients sections
+    const ingredientsHeadings = document.querySelectorAll('h2, h3');
+    ingredientsHeadings.forEach(heading => {
+        if (heading.textContent.toLowerCase().includes('ingredient')) {
+            let section = heading.nextElementSibling;
+            while (section && section.tagName !== 'H2') {
+                if (section.tagName === 'UL') {
+                    section.classList.add('ingredients-section');
+                }
+                section = section.nextElementSibling;
+            }
+        }
+    });
+
+    // Style instructions sections
+    const instructionsHeadings = document.querySelectorAll('h2, h3');
+    instructionsHeadings.forEach(heading => {
+        if (heading.textContent.toLowerCase().includes('instruction')) {
+            let section = heading.nextElementSibling;
+            while (section && section.tagName !== 'H2') {
+                if (section.tagName === 'OL' || section.tagName === 'UL') {
+                    section.classList.add('instructions-section');
+                }
+                section = section.nextElementSibling;
+            }
+        }
+    });
+
+    // Style tips sections
+    const tipsHeadings = document.querySelectorAll('h2, h3');
+    tipsHeadings.forEach(heading => {
+        if (heading.textContent.toLowerCase().includes('tip')) {
+            let section = heading.nextElementSibling;
+            while (section && section.tagName !== 'H2') {
+                if (section.tagName === 'UL' || section.tagName === 'P') {
+                    section.classList.add('tips-section');
+                }
+                section = section.nextElementSibling;
+            }
+        }
+    });
+});
+</script>

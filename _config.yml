@@ -1,0 +1,45 @@
+# Jekyll configuration for RecipeBook GitHub Pages
+title: "RecipeBook - A Culinary Journey"
+description: "A collection of great recipes organized as daily story-driven cooking adventures"
+url: "https://mattleibow.github.io"
+baseurl: "/RecipeBook"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections for recipes
+collections:
+  recipes:
+    output: true
+    permalink: /:path/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .github/
+  - .git/
+  - .gitignore
+
+# Include all markdown files in date folders
+include:
+  - 2024/

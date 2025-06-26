@@ -2,11 +2,11 @@
 
 ## A Story of Comfort and Connection
 
-During one of the most challenging periods of my life, when I had just moved to a new city for work and found myself feeling incredibly isolated and overwhelmed, I discovered the transformative power of baking. It was a particularly gray October evening, and I had just received some disappointing news about a project I'd been working on for months. Feeling defeated and homesick, I found myself wandering aimlessly through my tiny apartment kitchen, searching for something—anything—that might lift my spirits.
+During one of the most challenging periods of my life, when I had just moved to a new city for work and found myself feeling incredibly isolated and overwhelmed, I discovered the transformative power of baking. It was a particularly gray evening, and I had just received some disappointing news about a project I'd been working on. Feeling defeated and homesick, I found myself wandering aimlessly through my tiny apartment kitchen, searching for something—anything—that might lift my spirits.
 
 That's when I remembered my grandmother's old recipe box that I had brought with me but never opened. Buried beneath yellowed index cards covered in her familiar handwriting, I found a simple brownie recipe that she had clipped from a magazine decades ago. The edges were worn and stained with vanilla extract and cocoa powder from countless baking sessions in her warm, welcoming kitchen. As I read her notes scribbled in the margins—"add extra chocolate chips," "don't overbake!"—I could almost hear her voice guiding me through the process.
 
-Something magical happened as I melted the butter and chocolate together, watching them transform into a glossy, rich mixture. The rhythmic stirring, the careful measuring, the anticipation of something beautiful emerging from simple ingredients—it all felt like a meditation. When I pulled those first brownies from the oven, their surface crackled and shiny, my apartment filled with the most incredible aroma. I cut myself a warm square and took that first bite, and for the first time in weeks, I felt truly at peace. These brownies became my comfort ritual, my way of connecting with home, and eventually, my gateway to building new friendships when I started sharing them with neighbors and coworkers.
+Something magical happened as I melted the butter and chocolate together, watching them transform into a glossy, rich mixture. The rhythmic stirring, the careful measuring, the anticipation of something beautiful emerging from simple ingredients—it all felt like a meditation. When I pulled those first brownies from the oven, their surface crackled and shiny, my apartment filled with the most incredible aroma. I cut myself a warm square and took that first bite, and for the first time in a while, I felt truly at peace. These brownies became my comfort ritual, my way of connecting with home, and eventually, my gateway to building new friendships when I started sharing them with neighbors and coworkers.
 
 ## Ingredients
 
@@ -57,7 +57,7 @@ Something magical happened as I melted the butter and chocolate together, watchi
 - **Room Temperature Eggs**: This helps create a smoother batter and better texture.
 - **Quality Chocolate**: Use good quality chocolate—it makes a noticeable difference in flavor.
 - **Sharp Knife**: For clean cuts, use a sharp knife wiped clean between cuts.
-- **Storage**: Store in an airtight container for up to one week. These actually taste even better the next day!
+- **Storage**: Store in an airtight container for up to one week. These actually taste even better after resting!
 
 *Serves 16 | Prep Time: 15 minutes | Bake Time: 25-30 minutes*
 

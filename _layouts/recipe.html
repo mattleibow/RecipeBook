@@ -77,18 +77,13 @@ layout: default
     color: white;
 }
 
-.ingredient-conversion {
+.measurement-metric,
+.measurement-imperial {
     display: none;
 }
 
-.ingredient-conversion.active {
-    display: inline;
-}
-
-.original-measurement {
-    color: #6c757d;
-    font-size: 0.85em;
-    margin-left: 5px;
+.measurement-volume {
+    display: block;
 }
 
 @media (max-width: 576px) {
@@ -103,181 +98,21 @@ layout: default
 </style>
 
 <script>
-// Unit conversion data
-const ingredientConversions = {
-    // Flour (all-purpose) - 1 cup = 120g = 4.23oz
-    'flour': { gramsPerCup: 120, densityFactor: 1 },
-    'all-purpose flour': { gramsPerCup: 120, densityFactor: 1 },
-    'bread flour': { gramsPerCup: 127, densityFactor: 1 },
-    'cake flour': { gramsPerCup: 114, densityFactor: 1 },
-    'whole wheat flour': { gramsPerCup: 113, densityFactor: 1 },
-    
-    // Sugar - 1 cup granulated = 200g = 7.05oz
-    'sugar': { gramsPerCup: 200, densityFactor: 1 },
-    'granulated sugar': { gramsPerCup: 200, densityFactor: 1 },
-    'white sugar': { gramsPerCup: 200, densityFactor: 1 },
-    'brown sugar': { gramsPerCup: 213, densityFactor: 1 },
-    'powdered sugar': { gramsPerCup: 120, densityFactor: 1 },
-    'confectioners sugar': { gramsPerCup: 120, densityFactor: 1 },
-    
-    // Butter - 1 cup = 227g = 8oz
-    'butter': { gramsPerCup: 227, densityFactor: 1 },
-    'unsalted butter': { gramsPerCup: 227, densityFactor: 1 },
-    'salted butter': { gramsPerCup: 227, densityFactor: 1 },
-    
-    // Other common baking ingredients
-    'cocoa powder': { gramsPerCup: 85, densityFactor: 1 },
-    'baking powder': { gramsPerCup: 192, densityFactor: 1 },
-    'baking soda': { gramsPerCup: 220, densityFactor: 1 },
-    'cornstarch': { gramsPerCup: 120, densityFactor: 1 },
-    'rolled oats': { gramsPerCup: 90, densityFactor: 1 },
-    'coconut': { gramsPerCup: 85, densityFactor: 1 },
-    'shredded coconut': { gramsPerCup: 85, densityFactor: 1 },
-    
-    // Nuts and seeds
-    'almonds': { gramsPerCup: 143, densityFactor: 1 },
-    'walnuts': { gramsPerCup: 117, densityFactor: 1 },
-    'pecans': { gramsPerCup: 99, densityFactor: 1 },
-    
-    // Common pantry items that benefit from weight
-    'rice': { gramsPerCup: 185, densityFactor: 1 },
-    'quinoa': { gramsPerCup: 170, densityFactor: 1 },
-    'breadcrumbs': { gramsPerCup: 108, densityFactor: 1 }
-};
-
-// Items that should stay as volume (liquids and very small amounts)
-const volumeOnlyIngredients = [
-    'milk', 'water', 'oil', 'vegetable oil', 'olive oil', 'broth', 'stock', 
-    'wine', 'beer', 'cream', 'heavy cream', 'sour cream', 'yogurt',
-    'honey', 'maple syrup', 'vanilla extract', 'almond extract',
-    'lemon juice', 'lime juice', 'vinegar', 'soy sauce',
-    'salt', 'pepper', 'garlic powder', 'onion powder'
-];
-
-function parseIngredientLine(text) {
-    // Match patterns like "2 cups flour", "1½ teaspoons salt", "¼ cup butter"
-    const measurementRegex = /^(\d+(?:[½⅓⅔¼¾⅛⅜⅝⅞]|\.\d+|\/\d+)?)\s+(cups?|tablespoons?|tbsp|teaspoons?|tsp|pounds?|lbs?|ounces?|oz)\s+(.+)$/i;
-    const match = text.match(measurementRegex);
-    
-    if (!match) return null;
-    
-    let [, amount, unit, ingredient] = match;
-    
-    // Handle fractions properly
-    amount = amount.replace(/(\d+)?([½⅓⅔¼¾⅛⅜⅝⅞])/, (match, whole, frac) => {
-        const fractions = {'½': 0.5, '⅓': 0.333, '⅔': 0.667, '¼': 0.25, '¾': 0.75, '⅛': 0.125, '⅜': 0.375, '⅝': 0.625, '⅞': 0.875};
-        const wholeNum = whole ? parseInt(whole) : 0;
-        return (wholeNum + fractions[frac]).toString();
-    });
-    
-    // Handle simple fractions like 1/4, 1/2
-    if (amount.includes('/')) {
-        const [num, denom] = amount.split('/').map(n => parseInt(n));
-        amount = (num / denom).toString();
-    }
-    
-    return {
-        amount: parseFloat(amount),
-        unit: unit.toLowerCase(),
-        ingredient: ingredient.trim(),
-        originalText: text
-    };
-}
-
-function shouldConvertToWeight(ingredient) {
-    const lowerIngredient = ingredient.toLowerCase();
-    
-    // Check if it's in volume-only list
-    if (volumeOnlyIngredients.some(item => lowerIngredient.includes(item.toLowerCase()))) {
-        return false;
-    }
-    
-    // Check if we have conversion data
-    return Object.keys(ingredientConversions).some(key => lowerIngredient.includes(key.toLowerCase()));
-}
-
-function getConversionData(ingredient) {
-    const lowerIngredient = ingredient.toLowerCase();
-    for (const [key, data] of Object.entries(ingredientConversions)) {
-        if (lowerIngredient.includes(key.toLowerCase())) {
-            return data;
-        }
-    }
-    return null;
-}
-
-function convertToGrams(amount, unit, ingredient) {
-    const conversionData = getConversionData(ingredient);
-    if (!conversionData) return null;
-    
-    let gramsAmount = 0;
-    
-    switch (unit) {
-        case 'cup':
-        case 'cups':
-            gramsAmount = amount * conversionData.gramsPerCup;
-            break;
-        case 'tablespoon':
-        case 'tablespoons':
-        case 'tbsp':
-            gramsAmount = amount * (conversionData.gramsPerCup / 16);
-            break;
-        case 'teaspoon':
-        case 'teaspoons':
-        case 'tsp':
-            gramsAmount = amount * (conversionData.gramsPerCup / 48);
-            break;
-        default:
-            return null;
-    }
-    
-    return Math.round(gramsAmount);
-}
-
-function convertToOunces(grams) {
-    return (grams / 28.35).toFixed(1);
-}
-
-function createConversionHTML(originalText, parsed, grams) {
-    const ounces = convertToOunces(grams);
-    
-    return `
-        <span class="ingredient-conversion metric active">${grams}g ${parsed.ingredient}</span>
-        <span class="ingredient-conversion imperial">${ounces}oz ${parsed.ingredient}</span>
-        <span class="ingredient-conversion volume">${originalText}</span>
-        <span class="original-measurement">(${originalText})</span>
-    `;
-}
-
-function addUnitTabs() {
-    // Find all ingredients sections
+function initializeUnitTabs() {
+    // Find all ingredients sections that have measurement conversions
     const ingredientsSections = document.querySelectorAll('.ingredients-section');
     
     ingredientsSections.forEach(section => {
-        // Check if this section has convertible ingredients
-        const listItems = section.querySelectorAll('li');
-        let hasConvertibleIngredients = false;
+        // Check if this section has conversion data
+        const hasConversions = section.querySelector('.measurement-metric, .measurement-imperial, .measurement-volume');
         
-        listItems.forEach(li => {
-            const text = li.textContent.trim();
-            const parsed = parseIngredientLine(text);
-            
-            if (parsed && shouldConvertToWeight(parsed.ingredient)) {
-                const grams = convertToGrams(parsed.amount, parsed.unit, parsed.ingredient);
-                if (grams) {
-                    hasConvertibleIngredients = true;
-                    li.innerHTML = createConversionHTML(text, parsed, grams);
-                }
-            }
-        });
-        
-        // Add tabs if we have convertible ingredients
-        if (hasConvertibleIngredients) {
+        if (hasConversions) {
+            // Add tabs before this section
             const tabsHTML = `
                 <div class="unit-tabs">
-                    <button class="unit-tab active" data-unit="metric">Metric (g)</button>
+                    <button class="unit-tab active" data-unit="volume">Volume (cups)</button>
+                    <button class="unit-tab" data-unit="metric">Metric (g)</button>
                     <button class="unit-tab" data-unit="imperial">Imperial (oz)</button>
-                    <button class="unit-tab" data-unit="volume">Volume (cups)</button>
                 </div>
             `;
             section.insertAdjacentHTML('beforebegin', tabsHTML);
@@ -295,18 +130,15 @@ function addUnitTabs() {
             tabGroup.querySelectorAll('.unit-tab').forEach(t => t.classList.remove('active'));
             this.classList.add('active');
             
-            // Update visible conversions
-            ingredientsSection.querySelectorAll('.ingredient-conversion').forEach(conv => {
-                conv.classList.remove('active');
-            });
-            ingredientsSection.querySelectorAll(`.ingredient-conversion.${unit}`).forEach(conv => {
-                conv.classList.add('active');
+            // Show/hide appropriate measurements
+            const allMeasurements = ingredientsSection.querySelectorAll('.measurement-metric, .measurement-imperial, .measurement-volume');
+            allMeasurements.forEach(measurement => {
+                measurement.style.display = 'none';
             });
             
-            // Show/hide original measurements
-            const originalMeasurements = ingredientsSection.querySelectorAll('.original-measurement');
-            originalMeasurements.forEach(orig => {
-                orig.style.display = unit === 'volume' ? 'none' : 'inline';
+            const targetMeasurements = ingredientsSection.querySelectorAll(`.measurement-${unit}`);
+            targetMeasurements.forEach(measurement => {
+                measurement.style.display = 'block';
             });
         });
     });
@@ -383,6 +215,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add unit conversion tabs after all sections are styled
-    addUnitTabs();
+    initializeUnitTabs();
 });
 </script>

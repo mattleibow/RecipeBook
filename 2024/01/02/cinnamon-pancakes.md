@@ -18,18 +18,33 @@ I decided to recreate those childhood pancakes for both of us. I wanted to captu
 
 ### For the Pancakes:
 - 2 cups all-purpose flour
+  <div class="measurement-volume">2 cups all-purpose flour</div>
+  <div class="measurement-metric">240g all-purpose flour</div>
+  <div class="measurement-imperial">8.5oz all-purpose flour</div>
 - 2 tablespoons granulated sugar
+  <div class="measurement-volume">2 tablespoons granulated sugar</div>
+  <div class="measurement-metric">25g granulated sugar</div>
+  <div class="measurement-imperial">0.9oz granulated sugar</div>
 - 2 teaspoons baking powder
+  <div class="measurement-volume">2 teaspoons baking powder</div>
+  <div class="measurement-metric">8g baking powder</div>
+  <div class="measurement-imperial">0.3oz baking powder</div>
 - 1½ teaspoons ground cinnamon
 - 1 teaspoon salt
 - 2 large eggs
 - 1¾ cups whole milk
 - ¼ cup unsalted butter, melted
+  <div class="measurement-volume">¼ cup unsalted butter, melted</div>
+  <div class="measurement-metric">57g unsalted butter, melted</div>
+  <div class="measurement-imperial">2.0oz unsalted butter, melted</div>
 - 2 teaspoons vanilla extract
 - 2 tablespoons vegetable oil or butter for cooking
 
 ### For the Cinnamon Sugar Topping:
 - ¼ cup granulated sugar
+  <div class="measurement-volume">¼ cup granulated sugar</div>
+  <div class="measurement-metric">50g granulated sugar</div>
+  <div class="measurement-imperial">1.8oz granulated sugar</div>
 - 1 tablespoon ground cinnamon
 
 ### For Serving:

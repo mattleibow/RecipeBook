@@ -32,6 +32,7 @@ The site features:
 - [2024/01/05 - Sunshine Lemon Bars](2024/01/05/sunshine-lemon-bars.md)
 - [2024/01/06 - Hearty Winter Beef Stew](2024/01/06/hearty-winter-beef-stew.md)
 - [2024/01/07 - Garden Fresh Herb Pasta](2024/01/07/garden-fresh-herb-pasta.md)
+- [2024/01/08 - Fiery Piri-Piri Chicken](2024/01/08/fiery-piri-piri-chicken.md)
 
 ## Writing Guidelines
 

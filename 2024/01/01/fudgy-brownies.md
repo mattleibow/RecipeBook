@@ -1,3 +1,9 @@
+---
+layout: recipe
+title: "Ultimate Fudgy Brownies"
+date: 2024-01-01
+---
+
 # Ultimate Fudgy Brownies
 
 ## A Story of Comfort and Connection

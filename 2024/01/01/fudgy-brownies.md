@@ -18,12 +18,24 @@ Something magical happened as I melted the butter and chocolate together, watchi
 
 ### For the Brownies:
 - 1 cup (2 sticks) unsalted butter
+  <div class="measurement-volume">1 cup (2 sticks) unsalted butter</div>
+  <div class="measurement-metric">227g (2 sticks) unsalted butter</div>
+  <div class="measurement-imperial">8.0oz (2 sticks) unsalted butter</div>
 - 8 oz dark chocolate (70% cocoa), chopped
 - 1½ cups granulated sugar
+  <div class="measurement-volume">1½ cups granulated sugar</div>
+  <div class="measurement-metric">300g granulated sugar</div>
+  <div class="measurement-imperial">10.6oz granulated sugar</div>
 - 4 large eggs, room temperature
 - 1 teaspoon vanilla extract
 - 1 cup all-purpose flour
+  <div class="measurement-volume">1 cup all-purpose flour</div>
+  <div class="measurement-metric">120g all-purpose flour</div>
+  <div class="measurement-imperial">4.2oz all-purpose flour</div>
 - ⅓ cup unsweetened cocoa powder
+  <div class="measurement-volume">⅓ cup unsweetened cocoa powder</div>
+  <div class="measurement-metric">28g unsweetened cocoa powder</div>
+  <div class="measurement-imperial">1.0oz unsweetened cocoa powder</div>
 - ½ teaspoon salt
 - 1 cup chocolate chips (optional, but highly recommended)
 

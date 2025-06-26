@@ -44,7 +44,106 @@ layout: default
     </div>
 </div>
 
+<style>
+/* Unit conversion tabs styling */
+.unit-tabs {
+    display: flex;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.unit-tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.unit-tab:hover {
+    background-color: #e9ecef;
+}
+
+.unit-tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.measurement-metric,
+.measurement-imperial {
+    display: none;
+}
+
+.measurement-volume {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .unit-tabs {
+        flex-direction: column;
+    }
+    
+    .unit-tab {
+        margin: 2px 0;
+    }
+}
+</style>
+
 <script>
+function initializeUnitTabs() {
+    // Find all ingredients sections that have measurement conversions
+    const ingredientsSections = document.querySelectorAll('.ingredients-section');
+    
+    ingredientsSections.forEach(section => {
+        // Check if this section has conversion data
+        const hasConversions = section.querySelector('.measurement-metric, .measurement-imperial, .measurement-volume');
+        
+        if (hasConversions) {
+            // Add tabs before this section
+            const tabsHTML = `
+                <div class="unit-tabs">
+                    <button class="unit-tab active" data-unit="volume">Volume (cups)</button>
+                    <button class="unit-tab" data-unit="metric">Metric (g)</button>
+                    <button class="unit-tab" data-unit="imperial">Imperial (oz)</button>
+                </div>
+            `;
+            section.insertAdjacentHTML('beforebegin', tabsHTML);
+        }
+    });
+    
+    // Add tab functionality
+    document.querySelectorAll('.unit-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            const unit = this.dataset.unit;
+            const tabGroup = this.parentElement;
+            const ingredientsSection = tabGroup.nextElementSibling;
+            
+            // Update active tab
+            tabGroup.querySelectorAll('.unit-tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Show/hide appropriate measurements
+            const allMeasurements = ingredientsSection.querySelectorAll('.measurement-metric, .measurement-imperial, .measurement-volume');
+            allMeasurements.forEach(measurement => {
+                measurement.style.display = 'none';
+            });
+            
+            const targetMeasurements = ingredientsSection.querySelectorAll(`.measurement-${unit}`);
+            targetMeasurements.forEach(measurement => {
+                measurement.style.display = 'block';
+            });
+        });
+    });
+}
+
 // Add styling classes to content sections
 document.addEventListener('DOMContentLoaded', function() {
     // Style story sections
@@ -114,5 +213,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    
+    // Add unit conversion tabs after all sections are styled
+    initializeUnitTabs();
 });
 </script>

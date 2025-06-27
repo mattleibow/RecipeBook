@@ -58,6 +58,10 @@ The site features:
 
 See [.github/copilot-instructions.md](.github/copilot-instructions.md) for detailed guidelines on how recipe stories should be written.
 
+## AI Models and Content Generation
+
+For information about the AI models and content generation approach used in this project, see [AI_MODELS_INFO.md](AI_MODELS_INFO.md).
+
 ## Development
 
 To build the site locally:

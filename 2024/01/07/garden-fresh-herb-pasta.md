@@ -2,6 +2,7 @@
 layout: recipe
 title: "Garden Fresh Herb Pasta"
 date: 2024-01-07
+tags: [pasta, herbs, Italian, garden, fresh, community, growth, friendship, connection]
 ---
 
 # Garden Fresh Herb Pasta

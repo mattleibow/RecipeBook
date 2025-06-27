@@ -2,6 +2,7 @@
 layout: recipe
 title: "Warm Farro Salad with Roasted Vegetables and Tahini Dressing"
 date: 2024-01-25
+tags: [salad, farro, vegetables, tahini, healthy, grain-salad, roasted, Mediterranean, wholesome]
 ---
 
 # Warm Farro Salad with Roasted Vegetables and Tahini Dressing

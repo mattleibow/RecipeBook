@@ -18,6 +18,18 @@ layout: default
                 {{ content }}
             </div>
 
+            <!-- Recipe Tags -->
+            {% if page.tags %}
+            <div class="recipe-tags mt-4 pt-3 border-top">
+                <h5>Recipe Tags:</h5>
+                <div>
+                    {% for tag in page.tags %}
+                    <a href="{{ '/tags/' | append: tag | append: '/' | relative_url }}" class="badge bg-primary text-decoration-none me-2 mb-2">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
             <!-- Recipe Navigation -->
             <nav class="recipe-nav mt-5 pt-4 border-top">
                 <div class="row">

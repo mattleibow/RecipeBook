@@ -2,6 +2,7 @@
 layout: recipe
 title: "Slow-Braised Short Ribs with Red Wine"
 date: 2024-01-17
+tags: [beef, short-ribs, braised, red-wine, slow-cooked, comfort, winter, rich, elegant]
 ---
 
 # Slow-Braised Short Ribs with Red Wine

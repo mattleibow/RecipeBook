@@ -2,6 +2,7 @@
 layout: recipe
 title: "Rustic Sourdough Bread"
 date: 2024-01-04
+tags: [bread, sourdough, baking, patience, fermentation, artisan, growth, persistence, tradition]
 ---
 
 # Rustic Sourdough Bread

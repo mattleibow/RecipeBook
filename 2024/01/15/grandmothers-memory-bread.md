@@ -2,6 +2,7 @@
 layout: recipe
 title: "Grandmother's Memory Bread"
 date: 2024-01-15
+tags: [bread, memory, family, tradition, heritage, nostalgia, comfort, baking, love]
 ---
 
 # Grandmother's Memory Bread

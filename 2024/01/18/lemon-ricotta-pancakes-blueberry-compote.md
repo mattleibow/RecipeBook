@@ -2,6 +2,7 @@
 layout: recipe
 title: "Lemon Ricotta Pancakes with Blueberry Compote"
 date: 2024-01-18
+tags: [pancakes, lemon, ricotta, blueberry, breakfast, fresh, light, spring, elegant]
 ---
 
 # Lemon Ricotta Pancakes with Blueberry Compote

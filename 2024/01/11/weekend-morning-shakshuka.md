@@ -2,6 +2,7 @@
 layout: recipe
 title: "Weekend Morning Shakshuka"
 date: 2024-01-11
+tags: [shakshuka, eggs, tomatoes, Middle-Eastern, breakfast, weekend, community, sharing, spontaneous]
 ---
 
 # Weekend Morning Shakshuka

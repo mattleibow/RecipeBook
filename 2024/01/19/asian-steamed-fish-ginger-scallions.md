@@ -2,6 +2,7 @@
 layout: recipe
 title: "Asian-Style Steamed Fish with Ginger and Scallions"
 date: 2024-01-19
+tags: [fish, steamed, Asian, ginger, scallions, healthy, light, delicate, simple]
 ---
 
 # Asian-Style Steamed Fish with Ginger and Scallions

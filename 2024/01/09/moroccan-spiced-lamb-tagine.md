@@ -2,6 +2,7 @@
 layout: recipe
 title: "Moroccan Spiced Lamb Tagine"
 date: 2024-01-09
+tags: [lamb, tagine, Moroccan, spices, slow-cooked, cultural-exchange, heritage, tradition, hospitality]
 ---
 
 # Moroccan Spiced Lamb Tagine

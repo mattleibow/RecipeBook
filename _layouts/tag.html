@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<div class="text-center mb-5">
+    <h1 class="display-4 mb-3">{{ page.tag | capitalize }} Recipes</h1>
+    <p class="lead">Recipes tagged with "{{ page.tag }}"</p>
+</div>
+
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        {% assign tagged_recipes = '' | split: '' %}
+        {% for recipe in site.pages %}
+            {% if recipe.tags contains page.tag %}
+                {% assign tagged_recipes = tagged_recipes | push: recipe %}
+            {% endif %}
+        {% endfor %}
+        {% assign tagged_recipes = tagged_recipes | sort: "date" | reverse %}
+        
+        {% for recipe in tagged_recipes %}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="card-title">
+                            <a href="{{ recipe.url | relative_url }}" class="text-decoration-none">
+                                {% if recipe.title %}
+                                    {{ recipe.title }}
+                                {% else %}
+                                    {% assign title = recipe.content | split: '# ' | last | split: newline | first %}
+                                    {{ title }}
+                                {% endif %}
+                            </a>
+                        </h3>
+                        <p class="card-text">
+                            {% assign story_start = recipe.content | split: '## A Story' | last | split: '##' | first | strip_html | truncate: 150 %}
+                            {{ story_start }}
+                        </p>
+                        {% if recipe.tags %}
+                        <div class="mb-2">
+                            {% for tag in recipe.tags %}
+                            <a href="{{ '/tags/' | append: tag | append: '/' | relative_url }}" class="badge bg-secondary text-decoration-none me-1">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <p class="text-muted small mb-2">
+                            {% if recipe.date %}
+                                Recipe {{ recipe.date | date: "%Y/%m/%d" }}
+                            {% else %}
+                                {% assign date_parts = recipe.path | split: '/' %}
+                                {% if date_parts.size >= 3 %}
+                                    Recipe {{ date_parts[0] }}/{{ date_parts[1] }}/{{ date_parts[2] }}
+                                {% endif %}
+                            {% endif %}
+                        </p>
+                        <a href="{{ recipe.url | relative_url }}" class="btn btn-primary">Read Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+        {% if tagged_recipes.size == 0 %}
+        <div class="text-center">
+            <p class="text-muted">No recipes found with this tag.</p>
+        </div>
+        {% endif %}
+        
+        <div class="text-center mt-4">
+            <a href="{{ '/tags/' | relative_url }}" class="btn btn-outline-primary me-2">View All Tags</a>
+            <a href="{{ '/' | relative_url }}" class="btn btn-outline-primary">Back to Home</a>
+        </div>
+    </div>
+</div>

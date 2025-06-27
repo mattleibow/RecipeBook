@@ -2,6 +2,7 @@
 layout: recipe
 title: "Spiced Apple Galette with Cardamom Cream"
 date: 2024-01-23
+tags: [dessert, apple, galette, pastry, spices, cardamom, rustic, autumn, comforting]
 ---
 
 # Spiced Apple Galette with Cardamom Cream

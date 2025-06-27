@@ -2,6 +2,7 @@
 layout: recipe
 title: "Healing Chicken and Rice Soup"
 date: 2024-01-03
+tags: [soup, chicken, rice, comfort, healing, care, nurturing, recovery, warmth, community]
 ---
 
 # Healing Chicken and Rice Soup

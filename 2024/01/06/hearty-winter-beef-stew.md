@@ -2,6 +2,7 @@
 layout: recipe
 title: "Hearty Winter Beef Stew"
 date: 2024-01-06
+tags: [stew, beef, braised, winter, comfort, resilience, strength, slow-cooked, nourishing]
 ---
 
 # Hearty Winter Beef Stew

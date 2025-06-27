@@ -2,6 +2,7 @@
 layout: recipe
 title: "Ultimate Fudgy Brownies"
 date: 2024-01-01
+tags: [dessert, chocolate, brownies, baking, comfort, healing, connection, family, tradition]
 ---
 
 # Ultimate Fudgy Brownies

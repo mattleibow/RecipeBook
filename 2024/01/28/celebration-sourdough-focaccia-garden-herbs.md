@@ -2,6 +2,7 @@
 layout: recipe
 title: "Celebration Sourdough Focaccia with Garden Herbs"
 date: 2024-01-28
+tags: [bread, focaccia, sourdough, herbs, Italian, celebration, sharing, garden, community]
 ---
 
 # Celebration Sourdough Focaccia with Garden Herbs

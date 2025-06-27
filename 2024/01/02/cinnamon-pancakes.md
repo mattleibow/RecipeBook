@@ -2,6 +2,7 @@
 layout: recipe
 title: "Heavenly Cinnamon Pancakes with Honey"
 date: 2024-01-02
+tags: [breakfast, pancakes, cinnamon, honey, comfort, healing, friendship, hope, nostalgia]
 ---
 
 # Heavenly Cinnamon Pancakes with Honey

@@ -2,6 +2,7 @@
 layout: recipe
 title: "Silky Mushroom Risotto with Thyme"
 date: 2024-01-10
+tags: [risotto, mushrooms, thyme, Italian, patience, meditation, slow-cooking, mindfulness, comfort]
 ---
 
 # Silky Mushroom Risotto with Thyme

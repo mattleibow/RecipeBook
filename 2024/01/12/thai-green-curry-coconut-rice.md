@@ -2,6 +2,7 @@
 layout: recipe
 title: "Thai Green Curry with Coconut Rice"
 date: 2024-01-12
+tags: [curry, Thai, coconut, rice, spicy, Asian, comfort, warming, aromatic]
 ---
 
 # Thai Green Curry with Coconut Rice

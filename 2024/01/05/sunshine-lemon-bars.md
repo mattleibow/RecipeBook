@@ -2,6 +2,7 @@
 layout: recipe
 title: "Sunshine Lemon Bars"
 date: 2024-01-05
+tags: [dessert, lemon, bars, baking, celebration, community, joy, brightness, sharing]
 ---
 
 # Sunshine Lemon Bars

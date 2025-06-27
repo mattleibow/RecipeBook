@@ -2,6 +2,7 @@
 layout: recipe
 title: "Wild Mushroom and Barley Risotto"
 date: 2024-01-22
+tags: [risotto, mushrooms, barley, hearty, earthy, vegetarian, wholesome, comfort]
 ---
 
 # Wild Mushroom and Barley Risotto

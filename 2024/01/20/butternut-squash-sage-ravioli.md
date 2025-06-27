@@ -2,6 +2,7 @@
 layout: recipe
 title: "Butternut Squash and Sage Ravioli"
 date: 2024-01-20
+tags: [pasta, ravioli, butternut-squash, sage, Italian, homemade, autumn, comfort, handmade]
 ---
 
 # Butternut Squash and Sage Ravioli

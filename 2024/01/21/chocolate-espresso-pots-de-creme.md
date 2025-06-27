@@ -2,6 +2,7 @@
 layout: recipe
 title: "Chocolate Espresso Pots de Crème"
 date: 2024-01-21
+tags: [dessert, chocolate, espresso, French, elegant, custard, rich, sophisticated]
 ---
 
 # Chocolate Espresso Pots de Crème

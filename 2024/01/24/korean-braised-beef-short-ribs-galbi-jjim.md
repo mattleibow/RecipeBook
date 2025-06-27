@@ -2,6 +2,7 @@
 layout: recipe
 title: "Korean-Style Braised Beef Short Ribs (Galbi Jjim)"
 date: 2024-01-24
+tags: [beef, short-ribs, Korean, braised, galbi-jjim, Asian, comfort, sweet-savory, cultural]
 ---
 
 # Korean-Style Braised Beef Short Ribs (Galbi Jjim)

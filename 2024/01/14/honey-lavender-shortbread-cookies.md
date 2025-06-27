@@ -2,6 +2,7 @@
 layout: recipe
 title: "Honey Lavender Shortbread Cookies"
 date: 2024-01-14
+tags: [cookies, shortbread, honey, lavender, baking, delicate, tea-time, floral, comfort]
 ---
 
 # Honey Lavender Shortbread Cookies

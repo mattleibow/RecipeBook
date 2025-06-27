@@ -2,6 +2,7 @@
 layout: recipe
 title: "Classic French Onion Soup"
 date: 2024-01-13
+tags: [soup, French, onions, cheese, comfort, winter, patience, slow-cooked, classic]
 ---
 
 # Classic French Onion Soup

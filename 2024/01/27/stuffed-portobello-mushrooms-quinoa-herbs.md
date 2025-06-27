@@ -2,6 +2,7 @@
 layout: recipe
 title: "Stuffed Portobello Mushrooms with Quinoa and Herbs"
 date: 2024-01-27
+tags: [vegetarian, mushrooms, quinoa, herbs, healthy, stuffed, Mediterranean, fresh, clean-eating]
 ---
 
 # Stuffed Portobello Mushrooms with Quinoa and Herbs

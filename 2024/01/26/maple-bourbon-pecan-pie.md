@@ -2,6 +2,7 @@
 layout: recipe
 title: "Maple Bourbon Pecan Pie"
 date: 2024-01-26
+tags: [dessert, pie, pecan, maple, bourbon, Southern, sweet, rich, celebration]
 ---
 
 # Maple Bourbon Pecan Pie

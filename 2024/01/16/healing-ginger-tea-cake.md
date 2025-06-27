@@ -2,6 +2,7 @@
 layout: recipe
 title: "Healing Ginger Tea Cake"
 date: 2024-01-16
+tags: [cake, ginger, tea-cake, healing, warmth, spice, comfort, recovery, soothing]
 ---
 
 # Healing Ginger Tea Cake

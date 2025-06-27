@@ -7,9 +7,9 @@ baseurl: "/RecipeBook"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+# theme: minima  # Using custom layouts instead
 
-# Plugins (all supported by GitHub Pages)
+# Plugins (restore for GitHub Pages)
 plugins:
   - jekyll-feed
   - jekyll-sitemap

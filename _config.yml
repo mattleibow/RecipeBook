@@ -9,11 +9,11 @@ markdown: kramdown
 highlighter: rouge
 # theme: minima  # Using custom layouts instead
 
-# Plugins (all supported by GitHub Pages)
-# plugins:
-#   - jekyll-feed
-#   - jekyll-sitemap
-#   - jekyll-seo-tag
+# Plugins (restore for GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Collections for recipes
 collections:

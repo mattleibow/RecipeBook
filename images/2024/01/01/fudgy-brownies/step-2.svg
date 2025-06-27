@@ -1,0 +1,23 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f5f5dc"/>
+  
+  <!-- Mixing bowl -->
+  <ellipse cx="200" cy="200" rx="120" ry="80" fill="#e6e6fa"/>
+  <ellipse cx="200" cy="190" rx="110" ry="70" fill="#f0f0f0"/>
+  
+  <!-- Chocolate mixture -->
+  <ellipse cx="200" cy="195" rx="90" ry="50" fill="#4a3b2a"/>
+  
+  <!-- Butter cubes floating -->
+  <rect x="150" y="170" width="15" height="15" fill="#fff8dc" rx="2"/>
+  <rect x="220" y="180" width="15" height="15" fill="#fff8dc" rx="2"/>
+  <rect x="180" y="185" width="15" height="15" fill="#fff8dc" rx="2"/>
+  
+  <!-- Steam lines -->
+  <path d="M 160 160 Q 165 150 160 140" stroke="#ddd" stroke-width="2" fill="none"/>
+  <path d="M 200 155 Q 205 145 200 135" stroke="#ddd" stroke-width="2" fill="none"/>
+  <path d="M 240 165 Q 245 155 240 145" stroke="#ddd" stroke-width="2" fill="none"/>
+  
+  <text x="200" y="40" text-anchor="middle" fill="#8b4513" font-family="serif" font-size="18" font-weight="bold">Step 2: Melt Chocolate and Butter</text>
+  <text x="200" y="280" text-anchor="middle" fill="#666" font-family="serif" font-size="14">Stir until smooth and glossy</text>
+</svg>

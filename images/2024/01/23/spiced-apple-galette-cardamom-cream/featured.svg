@@ -1,0 +1,41 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f5f5dc"/>
+  
+  <!-- Pastry base -->
+  <ellipse cx="300" cy="280" rx="200" ry="120" fill="#deb887"/>
+  
+  <!-- Apple slices arranged in overlapping pattern -->
+  <ellipse cx="200" cy="240" rx="40" ry="15" fill="#ff6347" transform="rotate(20 200 240)"/>
+  <ellipse cx="230" cy="235" rx="40" ry="15" fill="#ff4500" transform="rotate(15 230 235)"/>
+  <ellipse cx="260" cy="232" rx="40" ry="15" fill="#ff6347" transform="rotate(10 260 232)"/>
+  <ellipse cx="290" cy="230" rx="40" ry="15" fill="#ff4500" transform="rotate(5 290 230)"/>
+  <ellipse cx="320" cy="232" rx="40" ry="15" fill="#ff6347" transform="rotate(-5 320 232)"/>
+  <ellipse cx="350" cy="235" rx="40" ry="15" fill="#ff4500" transform="rotate(-10 350 235)"/>
+  <ellipse cx="380" cy="240" rx="40" ry="15" fill="#ff6347" transform="rotate(-15 380 240)"/>
+  
+  <!-- Second layer -->
+  <ellipse cx="215" cy="260" rx="40" ry="15" fill="#ff4500" transform="rotate(25 215 260)"/>
+  <ellipse cx="245" cy="255" rx="40" ry="15" fill="#ff6347" transform="rotate(20 245 255)"/>
+  <ellipse cx="275" cy="252" rx="40" ry="15" fill="#ff4500" transform="rotate(15 275 252)"/>
+  <ellipse cx="305" cy="250" rx="40" ry="15" fill="#ff6347" transform="rotate(10 305 250)"/>
+  <ellipse cx="335" cy="252" rx="40" ry="15" fill="#ff4500" transform="rotate(-10 335 252)"/>
+  <ellipse cx="365" cy="255" rx="40" ry="15" fill="#ff6347" transform="rotate(-20 365 255)"/>
+  
+  <!-- Center layer -->
+  <ellipse cx="260" cy="275" rx="40" ry="15" fill="#ff6347" transform="rotate(30 260 275)"/>
+  <ellipse cx="290" cy="270" rx="40" ry="15" fill="#ff4500" transform="rotate(25 290 270)"/>
+  <ellipse cx="320" cy="275" rx="40" ry="15" fill="#ff6347" transform="rotate(-25 320 275)"/>
+  
+  <!-- Crust edges -->
+  <path d="M 100 280 Q 150 200 200 240 Q 250 180 300 230 Q 350 180 400 240 Q 450 200 500 280" 
+        stroke="#8b7355" stroke-width="3" fill="none"/>
+  
+  <!-- Spices scattered on top -->
+  <circle cx="240" cy="245" r="1" fill="#8b4513"/>
+  <circle cx="320" cy="250" r="1" fill="#8b4513"/>
+  <circle cx="290" cy="265" r="1" fill="#8b4513"/>
+  <circle cx="350" cy="240" r="1" fill="#8b4513"/>
+  
+  <text x="300" y="50" text-anchor="middle" fill="#8b4513" font-family="serif" font-size="28" font-weight="bold">Spiced Apple Galette</text>
+  <text x="300" y="380" text-anchor="middle" fill="#8b4513" font-family="serif" font-size="18">with Cardamom Cream</text>
+</svg>

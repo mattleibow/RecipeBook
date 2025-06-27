@@ -80,3 +80,42 @@ Each recipe should include:
 - "On a cold January evening..."
 
 Remember: These stories should feel timeless and accessible to anyone, anywhere, at any time of year.
+
+## Tag Management System
+
+This repository uses a comprehensive tag cloud system for recipe discovery and navigation. When working with recipes, always maintain the tagging system:
+
+### 6. Recipe Tagging Requirements
+
+**When creating or editing recipes, always:**
+- Add appropriate tags to the recipe frontmatter in the `tags:` field
+- Use existing tags when possible to maintain consistency
+- Create new tag pages when introducing new tags
+- Update existing tag pages when adding recipes with existing tags
+
+**Tag categories to consider:**
+- **Recipe types**: dessert, pasta, bread, soup, stew, salad, etc.
+- **Cooking methods**: braised, baked, grilled, steamed, slow-cooked, etc.
+- **Story themes**: comfort, healing, community, family, connection, etc.
+- **Primary ingredients**: chocolate, herbs, mushrooms, spices, etc.
+- **Cultural cuisines**: Italian, Thai, Moroccan, Korean, French, etc.
+- **Dietary considerations**: vegetarian, healthy, hearty, light, etc.
+- **Occasions**: celebration, breakfast, tea-time, etc.
+
+**Tag page structure:**
+- Each tag has its own page at `/tags/{tag}/index.md`
+- Tag pages automatically list all recipes with that tag
+- Use lowercase, hyphenated naming for tag files (e.g., `slow-cooked.md`)
+- Ensure the tag page layout uses `layout: tag` and includes `tag: {tagname}`
+
+**When adding new recipes:**
+1. Review the story and recipe to identify 6-10 relevant tags
+2. Check if tag pages exist in the `/tags/` directory
+3. Create new tag pages for any new tags introduced
+4. Verify tags are properly formatted in recipe frontmatter as YAML array
+
+**Tag maintenance:**
+- Keep tag names consistent across recipes
+- Use descriptive but concise tag names
+- Avoid overly specific tags that would only apply to one recipe
+- Prefer existing tags over creating new ones when possible
